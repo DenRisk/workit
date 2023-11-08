@@ -1,0 +1,23 @@
+@use "../../styles/mixins/button" as *;
+@use "../../styles/variables/shared" as var;
+
+.button {
+  @include button-reset();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: var.$color-green;
+  color: var.$color-blue;
+  min-height: 4rem;
+  font-size: var.$font-size-lg;
+  font-weight: var.$font-weight-bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    color: var.$color-green;
+    border: 2px solid var.$color-green;
+  }
+}

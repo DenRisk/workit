@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import logo from './assets/svg/logo-light.svg';
+import Link from "./components/link/link";
+import Heading from "./components/heading/heading";
+import Button from "./components/button/button";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className={'header'}>
+                <div className={'header__content'}>
+                    <nav className={'header__navigation'}>
+                        <img src={logo} alt={'logo'}></img>
+                        <Link text={'Apply for access'}></Link>
+                    </nav>
+                </div>
+            </header>
+            <section className={'intro'}>
+                <div className={'intro__content'}>
+                    <Heading headingType={"headingL"} text={'Data tailored to your needs.'}></Heading>
+                    <Button text={'Learn more'} />
+                </div>
+            </section>
+            <section className={'benefits'}></section>
+            <section className={'access'}></section>
+        </div>
+    );
 }
 
 export default App;

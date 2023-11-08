@@ -1,0 +1,43 @@
+@use "../../styles/variables/shared" as var;
+@use "../../styles/mixins/breakpoints" as *;
+
+.heading {
+  font-family: Fraunces, sans-serif;
+  text-align: center;
+  line-height: 1;
+}
+
+.headingL {
+  color: var.$color-white;
+  font-size: var.$font-size-4xl;
+  font-weight: var.$font-weight-semiBold;
+  padding: 2.5rem 0;
+  max-width: 560px;
+
+  @include media-breakpoint-up($sm) {
+    font-size: var.$font-size-5xl;
+  }
+
+  @include media-breakpoint-up($lg) {
+    font-size: var.$font-size-6xl;
+  }
+}
+
+.headingM {
+  color: var.$color-white;
+  font-size: var.$font-size-2xl;
+  font-weight: var.$font-weight-semiBold;
+
+  @include media-breakpoint-up($sm) {
+    font-size: var.$font-size-4xl;
+  }
+
+  @include media-breakpoint-up($lg) {
+    font-size: var.$font-size-5xl;
+  }
+}
+
+.headingS {
+  font-size: var.$font-size-2xl;
+  font-weight: var.$font-weight-semiBold;
+}
