@@ -1,4 +1,4 @@
-export type LinkModel = {
+type LinkModel = {
     text: string
 };
 

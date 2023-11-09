@@ -1,0 +1,36 @@
+@use "../variables/shared" as var;
+@use "../mixins/breakpoints" as *;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Fraunces, sans-serif;
+  font-weight: var.$font-weight-semiBold;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var.$font-size-4xl;
+
+  @include media-breakpoint-up($md) {
+    font-size: var.$font-size-5xl;
+  }
+
+  @include media-breakpoint-up($xl) {
+    font-size: var.$font-size-6xl;
+  }
+}
+
+h2 {
+  font-size: var.$font-size-2xl;
+
+  @include media-breakpoint-up($md) {
+    font-size: var.$font-size-4xl;
+  }
+
+  @include media-breakpoint-up($xl) {
+    font-size: var.$font-size-5xl;
+  }
+}
+
+h3 {
+  font-size: var.$font-size-2xl;
+}

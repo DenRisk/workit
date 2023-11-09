@@ -17,10 +17,11 @@ html:focus-within {
 }
 
 html, body {
-  min-height: 100%;
+  min-height: 100vh;
   font-family: Manrope, sans-serif;
   color: var.$color-blue;
   font-size: var.$font-size-base;
+  overflow-x: hidden;
 }
 
 body {

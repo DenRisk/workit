@@ -1,4 +1,4 @@
-export type ButtonModel = {
+type ButtonModel = {
     text: string
 };
 
