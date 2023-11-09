@@ -1,0 +1,39 @@
+@use '../../styles/variables/shared' as var;
+@use "../../styles/mixins/page" as page;
+@use "../../styles/mixins/breakpoints" as *;
+
+.benefits {
+  position: relative;
+  background-color: var.$color-white-blue;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 100%;
+    height: 4rem;
+    background-color: var.$color-white-blue;
+    left: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  &__content {
+    padding: 14rem 0 6rem;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @include page.media-breakpoint-up($md) {
+      padding: 16rem 0 8rem;
+    }
+
+    @include page.media-breakpoint-up($xl) {
+      flex-direction: row;
+      padding: 18rem 0 10rem;
+      column-gap: 2rem;
+    }
+  }
+}

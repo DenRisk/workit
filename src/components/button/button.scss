@@ -1,8 +1,10 @@
-@use "../../styles/mixins/button" as *;
+@use "../../styles/mixins/button" as button;
 @use "../../styles/variables/shared" as var;
+@use "../../styles/mixins/breakpoints" as *;
+
 
 .button {
-  @include button-reset();
+  @include button.button-reset();
 
   display: flex;
   align-items: center;
@@ -11,9 +13,12 @@
   background-color: var.$color-green;
   color: var.$color-blue;
   min-height: 4rem;
-  font-size: var.$font-size-lg;
   font-weight: var.$font-weight-bold;
   cursor: pointer;
+
+  @include media-breakpoint-up($xl) {
+    font-size: var.$font-size-lg;
+  }
 
   &:hover {
     background-color: transparent;

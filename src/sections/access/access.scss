@@ -1,0 +1,73 @@
+@use '../../styles/variables/shared' as var;
+@use "../../styles/mixins/page" as page;
+@use "../../styles/mixins/breakpoints" as *;
+
+.access {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var.$color-blue;
+    padding: 2rem;
+    position: relative;
+    top: -3rem;
+
+    @include media-breakpoint-up($md) {
+      padding: 3.5rem;
+      margin-left: 10rem;
+      top: -8rem;
+      align-items: flex-start;
+    }
+
+    @include media-breakpoint-up($xl) {
+      padding: 4rem;
+      margin-left: 22rem;
+    }
+  }
+
+  &__founder {
+    max-width: 17rem;
+
+    @include media-breakpoint-up($md) {
+      margin-right: auto;
+    }
+
+    @include media-breakpoint-up($xl) {
+      max-width: 28rem;
+    }
+  }
+
+  &__heading, &__text {
+    text-align: center;
+    color: var.$color-white;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up($md) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @include media-breakpoint-up($xl) {
+      font-size: var.$font-size-lg;
+    }
+  }
+
+  &__patternAccess {
+    display: none;
+
+    @include media-breakpoint-up($md) {
+      display: block;
+      position: absolute;
+      bottom: -6rem;
+      right: 3rem;
+    }
+  }
+}

@@ -42,7 +42,6 @@
 
   &__text {
     grid-area: text;
-    font-size: var.$font-size-lg;
     text-align: center;
 
     @include media-breakpoint-up($md) {
@@ -50,6 +49,7 @@
     }
 
     @include media-breakpoint-up($xl) {
+      font-size: var.$font-size-lg;
       text-align: center;
     }
   }
