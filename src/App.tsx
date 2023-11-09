@@ -7,7 +7,7 @@ import PatternRight from './assets/svg/bg-pattern-2.svg';
 import Link from "./components/link/link";
 import Button from "./components/button/button";
 import Benefit, {BenefitModel} from "./components/benefit/benefit";
-import { uuid } from 'uuidv4';
+import { v4 as uuidV4 } from 'uuid';
 
 const benefits: BenefitModel[] = [
     {
@@ -48,7 +48,7 @@ function App() {
                 <div className={'benefits__content'}>
                     <div className={'benefits__container'}>
                         {benefits.map((benefit, index) => (
-                            <Benefit key={uuid()} title={benefit.title} text={benefit.text} benefitCount={index}></Benefit>
+                            <Benefit key={uuidV4()} title={benefit.title} text={benefit.text} benefitCount={index}></Benefit>
                         ))}
                     </div>
                 </div>
