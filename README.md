@@ -40,7 +40,6 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Sass
-- 
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
