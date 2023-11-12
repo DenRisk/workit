@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/workit/static/css/main.fc62edb0.css",
+    "main.js": "/workit/static/js/main.b10287ca.js",
+    "static/media/Fraunces-VariableFont.ttf": "/workit/static/media/Fraunces-VariableFont.19cbf8c91fa01353cf81.ttf",
+    "static/media/Manrope-VariableFont.ttf": "/workit/static/media/Manrope-VariableFont.cae461b0196986f4250c.ttf",
+    "static/media/image-hero.webp": "/workit/static/media/image-hero.a7670418285473b2adf5.webp",
+    "static/media/image-founder.webp": "/workit/static/media/image-founder.4bf14138ae0d658ac300.webp",
+    "static/media/logo-dark.svg": "/workit/static/media/logo-dark.ad6b9d98f0dac266885d20b92b9160e6.svg",
+    "static/media/logo-light.svg": "/workit/static/media/logo-light.97dd94888735b443cf813528bd522f08.svg",
+    "static/media/icon-instagram.svg": "/workit/static/media/icon-instagram.133d9df3c7ae80fcb096b58d0fd6f26e.svg",
+    "static/media/icon-twitter.svg": "/workit/static/media/icon-twitter.792aca37816291c4327e79d0d80690f0.svg",
+    "index.html": "/workit/index.html",
+    "static/media/bg-pattern-1.svg": "/workit/static/media/bg-pattern-1.bfa7d51bac5e5ebf6188fc8b02b830bd.svg",
+    "static/media/bg-pattern-2.svg": "/workit/static/media/bg-pattern-2.4c1e835bb8483df3ccf9d1bbe7f8a2b6.svg",
+    "static/media/bg-pattern-3.svg": "/workit/static/media/bg-pattern-3.60897e39e078db73af9ebc8159ab0deb.svg",
+    "static/media/icon-facebook.svg": "/workit/static/media/icon-facebook.eacb176235c044927fbc6112bf468e14.svg",
+    "main.fc62edb0.css.map": "/workit/static/css/main.fc62edb0.css.map",
+    "main.b10287ca.js.map": "/workit/static/js/main.b10287ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc62edb0.css",
+    "static/js/main.b10287ca.js"
+  ]
+}
